@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="banner.css" />
+    <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="featured.css" />
+    <link rel="stylesheet" href="takra.css" />
+    <link rel="stylesheet" href="seminaire.css" />
+    <link rel="stylesheet" href="avis.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contact_form.css" />
+    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="subscribe.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>ESB Event</title>
+    <script defer src="index.js"></script>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+    <nav>
+      <div class="navbar_container">
+        <a href="/home">
+          <img 
+            src="./assets/essb.png"
+            height="200px"
+            style="padding-top: 5px;"
+          />
+        </a>
+        <div class="nav-links">
+            <a class="selected" href="/home">Home</a>
+            <a  href="/about"> About</a>
+            <a  href="/event">Event </a>
+            <a  href="/contact">Contact </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Banner -->
+    <div class="main">
+      <div class="banner_container">
+        <div class="info">
+          <h1>
+            Bonjour nous sommes <br>
+            <span class="ajout">
+              ESB Event 👋
+            </span>
+          </h1>
+          <p>
+            Restez informé des événements universitaires en visitant régulièrement le site d'ESB Event.<br> 
+            Votre source d'actualités et d'annonces pour rester à jour avec les événements de l'université !
+          </p>
+
+          <button>
+            <a href="/about">En Savoir plus</a> 
+          </button>
+        </div>
+
+        <div class="containerr" id="containerr">
+          <div class="form-containerr sign-up">
+              <form action="" method="post">
+                  <h1>Créer Un Compte</h1>
+                  <div class="social-icons">
+                      <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                  <span>or use your email for registeration</span>
+                  <input type="text" placeholder="Name" name="username" autocomplete="off" />
+                  <input type="email" placeholder="Email" name="email" autocomplete="off" />
+                  <input type="password" placeholder="Password" name="password" autocomplete="off" />
+                  <button type="submit" value="Submut">Sign Up</button>
+              </form>
+          </div>
+          <div class="form-containerr sign-in">
+              <form action="" method="post">
+                  <h1>Se Connecter</h1>
+                  <div class="social-icons">
+                      <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                      <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                  <span>ou utilisez votre mot de passe de messagerie</span>
+                  <input type="email" placeholder="Email" name="email" autocomplete="off" />
+                  <input type="password" placeholder="Mot de passe" name="password" autocomplete="off" />
+                  <a href="#">Mot de passe oublié?
+                  </a>
+                  <button type="submit" value="Submit">
+                    Se connecter
+                  </button>
+              </form>
+          </div>
+          <div class="toggle-containerr">
+              <div class="toggle">
+                  <div class="toggle-panel toggle-left">
+                      <h1>Content de te revoir!
+                      </h1>
+                      <p>Entrez vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                      <button class="hidden" id="login">Se connecter
+                      </button>
+                  </div>
+                  <div class="toggle-panel toggle-right">
+                      <h1>Bonjour</h1>
+                      <p>Inscrivez-vous avec vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                      <button class="hidden" id="register">S'Inscrire</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+    <div class="about_bg">
+      <img 
+        src="./assets/bgred.png" 
+        alt="" 
+        height="700px"  
+      />
+    </div>
+    <!-- End Banner -->
+
+    <!-- Events -->
+    <div class="events">
+      <div class="events-container">
+        <h3 class="year">Esprit Event</h3>
+
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">27</div>
+              <div class="month">Nov</div>
+            </div>
+          </div> 
+          <div class="event-right">
+            <h3 class="event-title">ESB league</h3>
+  
+            <div class="event-description">
+              l'événement sportif incontourable pour les étudiants de l'Esprit
+            </div>
+  
+            <div class="event-timing">
+               8:00 am
+            </div>
+          </div>
+        </div>
+        
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">15</div>
+              <div class="month">Nov</div>
+            </div>
+          </div>
+          <div class="event-right">
+            <h3 class="event-title">Forum des Entreprises</h3>
+  
+            <div class="event-description">
+              Le forum des Entreprises de l'Ecole Esprit constitue une occasion de rencontre pour 
+              les étudiants avec le monde professionnel, en particulier ceux qui sont à la recherche de stages de fin d'études, stages d'été ou d'emploi.
+            </div>
+  
+            <div class="event-timing">
+              11 am
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">9</div>
+              <div class="month">Mar</div>
+            </div>
+          </div>
+  
+          <div class="event-right">
+            <h3 class="event-title">Esprit Green Act HACKATON</h3>
+  
+            <div class="event-description">
+             Le groupe Esprit lance un Hackathon pour un environnement plus vert et durable
+            </div>
+  
+            <div class="event-timing">
+              08:00 am
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">6</div>
+              <div class="month">Mar</div>
+            </div>
+          </div>
+  
+          <div class="event-right">
+            <h3 class="event-title">Forum des Masters</h3>
+  
+            <div class="event-description">
+             Envie d'intégrer un Master professionnel à Esprit School Of Business ?
+             <br>vous aurez l'occasion de découvrir nos 6 programmes de Master
+            </div>
+  
+            <div class="event-timing">
+              <img src="images/time.png" alt="" /> 10:00 am
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-left">
+            <div class="event-date">
+              <div class="date">24</div>
+              <div class="month">Mai</div>
+            </div>
+          </div>
+  
+          <div class="event-right">
+            <h3 class="event-title">Alumni Day </h3>
+  
+            <div class="event-description">
+              Chers Esprit Alumni <br> 
+              ça vous dit de replonger dans vos souvenirs d'étudiant?
+            </div>
+  
+            <div class="event-timing">
+              <img src="images/time.png" alt="" /> 05:00 Pm
+            </div>
+          </div>
+        </div>
+      </div>  
+        
+      </div>
+      <!-- Events -->
+
+
+      <!-- Gallery -->
+      <div class="gallery_container">
+        <div class="images_container">
+          <div class="image-box">
+            <div class="row">
+              <img src="assets/alum.jpg" alt="Image 1" class="im">
+              <img src="assets/entreprise.jpg" alt="Image 2" class="im">
+              <img src="assets/esb.png" alt="Image 3" class="im">
+            </div>
+            <div class="row">
+              <img src="assets/esssb.jpg" alt="Image 4" class="im">
+              <img src="assets/immm.jpg" alt="Image 5" class="im">
+              <img src="assets/forum1.jpg" alt="Image 6" class="im">
+            </div>
+          </div>
+        </div>
+
+        <div class="reservation_container">
+            <form action="/createvent" method="POST">
+              <h4>Ajouter une évenement</h4>
+              <div class="reservation_form_container">
+                <input type="text" placeholder="Event Name" id="eventname" name="eventname" autocomplete="off" />
+                <input type="text" placeholder="Date D'évenement" id="eventdate" name="eventdate" autocomplete="off" />
+                <input type="text" placeholder="Heure D'évenement" id="eventtime" name="eventtime" autocomplete="off" />
+                <input type="number" placeholder="Nombre De Participants"id="participantsnbr" name="participantsnbr" autocomplete="off" />
+                <button class="cree" type="submit" value="Submit">Crée Un Evenement</button>
+				<p th:if="${error}" style="color: red;" th:text="${error}"></p>
+				<p th:if="${success}" style="color: green;" th:text="${success}"></p>
+              </div>
+            </form>
+            
+        </div>
+      </div>
+      
+      <!-- End Gallery -->
+
+
+    <!-- Posts -->
+    <div class="posts_container">
+      <div class="post_container">
+        <img 
+          src="assets/bell.svg" 
+          alt="" 
+          height="80px"  
+          width="80px"
+        />
+        <h4>Forum D'entreprise</h4>
+        <p class="post_date_time">
+          8 Mai 2024 - 9H Du Matin
+        </p>
+        <p class="post_description">
+          Le Forum Des Entreprises De L'ecole Esprit constitue une occasion de rencontre pour les étudiants avec le monde professionnel,
+          en particulier ceux qui à la recherche de stages de fin d'études, stage d'été ou d'emploi
+        </p>
+        <button>
+          <a href="https://www.esb.tn/actualites/forum-des-entreprises-du-groupe-esprit/" target="_blank">
+            Visiter
+          </a>
+        </button>
+      </div>
+    </div>
+    <!-- End Posts -->
+
+    
+
+    <!-- Avis --> 
+    <div class="avis_container">
+      <div class="containert">
+        <h4>Our Reviews</h4>
+        <div class="avis_wrapper">
+          <div class="card">
+            <div class="card_thumbnail" style="background: url(./assets/IMG_2202.jpg); background-size: contain"></div>
+            <div class="card__content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card__details">
+                <p>
+                  "La plateforme m'a permis de rester informée des événements organisés par l'université, 
+                  même lorsque je n'étais pas physiquement sur le campus. J'ai également apprécié la fonctionnalité de notification
+                  qui m'a alertée des nouveaux événements correspondant à mes centres d'intérêt."
+                </p>
+                <h4>- Salma ben Jrad</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_thumbnail" style="background: url(./assets/soufia.png); background-size: cover; background-repeat: no-repeat"></div>
+            <div class="card__content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card__details">
+                <p>
+                  "La plateforme était très conviviale et facile à naviguer. J'ai apprécié la variété des événements proposés et 
+                  la possibilité de consulter les détails de chaque événement avant de m'inscrire. 
+                  Cela m'a permis de planifier mes sorties en conséquence."
+                </p>
+                <h4>- Soufia Bouhajba</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- End Avis -->
+
+    <!-- Contact Us -->
+    <section class = "contact-section">
+      <div class = "contact-bg">
+        <h3>Prenez contact avec nous</h3>
+        <h2>Contactez-nous </h2>
+        <div class = "line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class = "text">
+          Gardez le contact avec nous chez Esb Event en utilisant nos coordonnées ci-dessous.
+        </p>
+      </div>
+
+
+      <div class = "contact-body">
+        <div class = "contact-info">
+          <div>
+            <span><i class = "fas fa-mobile-alt"></i></span>
+            <span>Numéro</span>
+            <span class = "text">+216 27305525</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-envelope-open"></i></span>
+            <span>Email</span>
+            <span class = "text">EsbEvent@esprit.tn</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-map-marker-alt"></i></span>
+            <span>Addresse</span>
+            <span class = "text">Zone Industrielle Chotrana II, B.P. 160 Pôle Technologique El Ghazela 2083 Ariana Tunis، 2083</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-clock"></i></span>
+            <span>Horaires d'ouvertures
+            </span>
+            <span class = "text">Lundi - Vendredi (9:00 AM jusqu'à 5:00 PM)</span>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Us -->
+
+      <!-- Contact Form -->
+	  <div class="contact-form">
+	    <!-- Message d'erreur -->
+	    
+	    <form action="/contacter" method="post">
+	      <div>
+	        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom" autocomplete="off" />
+	        <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom" autocomplete="off" />
+	      </div>
+	      <div>
+	        <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" autocomplete="off" />
+	        <input type="text" id="telephone" name="telephone" class="form-control" placeholder="Numéro de téléphone" autocomplete="off" />
+	      </div>
+	      <textarea rows="5" id="message" name="message" placeholder="Message" class="form-control"></textarea>
+	      <input type="submit" class="send-btn" value="Envoyer un message" autocomplete="off" />
+	    </form>
+							<p th:if="${error}" style="color: red;" th:text="${error}"></p>
+			  			    <!-- Message de succès -->
+			  			    <p th:if="${success}" style="color: green;" th:text="${success}"></p>
+	  </div>
+	  				
+      <!-- End Contact Form -->
+
+      <!-- Map -->
+      
+      <!-- End Map -->
+
+    </section>
+    
+    <!-- Subscribe -->
+    <div class="wrapper">
+      <div class="border-top"></div>
+      <div class="border-right"></div>
+      <div class="border-bottom"></div>
+      <div class="border-left"></div>
+
+      <div class="subscribe-container">
+          <p class="title">subscribe now</p>
+          <p class="message">Subscribe to get the latest <span>news & updates.</span></p>
+
+          <form>
+              <input type="email" placeholder="Your email address" autocomplete="off"# />
+
+              <button class="submit">Subscribe</button>
+          </form>
+      </div>
+    </div>
+    <!-- End Subscribe -->
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="/home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="/about">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="/event">Event</a></li>
+        <li class="menu__item"><a class="menu__link" href="/contact">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://www.esb.tn/fr/" target="_blank">Visit ESB</a></li>
+  
+      </ul>
+      <p>&copy;2024 Projet Intégré - Groupe 1 | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

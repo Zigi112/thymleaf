@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Créer un compte</h1>
+        <!-- Message d'erreur -->
+        <p th:if="${error}" style="color: red;" th:text="${error}"></p>
+        <!-- Message de succès -->
+        <p th:if="${success}" style="color: green;" th:text="${success}"></p>
+        <form action="/signup" method="POST">
+            <div class="input-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de Passe</label>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn">S'inscrire</button>
+                <a href="/home" class="btn secondary">Retour</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

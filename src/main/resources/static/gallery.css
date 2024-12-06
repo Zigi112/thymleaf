@@ -1,0 +1,106 @@
+
+.gallery_container {
+    width: 100vw;
+    height: 800px;
+    position: relative;
+    margin-top: 80px;
+}
+.images_container {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.image-box {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 3000px;
+}
+  
+.row {
+    display: flex;
+    
+}
+.im {
+    width: 600px;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+  
+.image:hover {
+    transform: scale(1.1);
+}
+
+.reservation_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+.reservation_container form {
+    width: 90%;
+    max-width: 700px;
+    padding: 70px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.reservation_container form h4 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.reservation_form_container {
+    margin-top: 20px;
+    flex: 1;
+    width: 90%;
+    max-width: 450px;
+}
+.reservation_form_container input {
+    background-color: #fff;
+    border: 1px solid #9a9a9a;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0 20px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.reservation_form_container button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.reservation_form_container button.cree {
+    margin-top: 12px;
+}
+.reservation_form_container button.reserver {
+    background: #fff;
+    color: #cc0e0e;
+    border: 1px solid #cc0e0e;
+}
+.reservation_form_container button.reserver:hover {
+    background: #000;
+    transition: background 0.3s ease-out;
+    color: #fff;
+    border: 1px solid #000;
+}
+#reserver_evenement {
+    display: none;
+}

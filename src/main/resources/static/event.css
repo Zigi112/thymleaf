@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f2f3fa;
+    color: #1f212b;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+hr {
+    border: 0;
+}
+a {
+    text-decoration: none;
+    color: #1f212b;
+}
+
+
+.page-container {
+    height: 100vh; /* View Height */
+    width: 100vw; /* View Width  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-content {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.page-content img {
+    width: 400px;
+}
+.page-content h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 12px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 45px;
+}
+.page-content p{
+    font-size: 19px;
+    max-width: 700px;
+    line-height: 27px;
+    text-align: center;
+    color: #9a9a9a;
+}
+.signature {
+    color: #1f212b !important; /* Met le texte en noir  */
+}
+.page-content button {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #1f212b;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.page-content button a {
+    color: #1f212b;
+}
+.page-content button:hover {
+    background: #1f212b;
+    transition: background 0.3s ease-out;
+}
+.page-content button:hover a {
+    color: #fff;
+    transition: color 0.3s ease-out;
+}
+

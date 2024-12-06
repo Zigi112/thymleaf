@@ -1,0 +1,23 @@
+
+.esprit_takra_container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.esprit_takra {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.takra_line {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}

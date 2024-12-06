@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <title>ESB Event - Contact Us</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contact_form.css" />
+    <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar_container">
+            <a href="/home">
+                <img 
+                    src="./assets/essb.png"
+                    height="200px"
+                    style="padding-top: 5px;"
+                />
+            </a>
+          <div class="nav-links">
+              <a class="selected" href="/home">Home</a>
+              <a href="/about">About</a>
+              <a href="/event">Event </a>
+              <a href="/contact">Contact </a>
+          </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Contact Us -->
+    <section class="contact-section">
+        <div class="contact-bg" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./assets/contact_banner_bg.jpg); background-size: cover; background-position: center; background-attachment: fixed">
+          <h3>Prenez contact avec nous</h3>
+          <h2>Contactez-nous </h2>
+          <div class = "line">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <p class = "text">
+            Gardez le contact avec nous chez Esb Event en utilisant nos coordonnées ci-dessous.
+          </p>
+        </div>
+  
+  
+        <div class = "contact-body">
+          <div class = "contact-info">
+            <div>
+              <span><i class = "fas fa-mobile-alt"></i></span>
+              <span>Numéro</span>
+              <span class = "text">+216 27305525</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-envelope-open"></i></span>
+              <span>Email</span>
+              <span class = "text">EsbEvent@esprit.tn</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-map-marker-alt"></i></span>
+              <span>Addresse</span>
+              <span class = "text">Zone Industrielle Chotrana II, B.P. 160 Pôle Technologique El Ghazela 2083 Ariana Tunis، 2083</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-clock"></i></span>
+              <span>Horaires d'ouvertures
+              </span>
+              <span class = "text">Lundi - Vendredi (9:00 AM jusqu'à 5:00 PM)</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Us -->
+  
+		<!-- Contact Form -->
+		  <div class="contact-form">
+		    <!-- Message d'erreur -->
+		    
+		    <form action="/contacter" method="post">
+		      <div>
+		        <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom" autocomplete="off" />
+		        <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom" autocomplete="off" />
+		      </div>
+		      <div>
+		        <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" autocomplete="off" />
+		        <input type="text" id="telephone" name="telephone" class="form-control" placeholder="Numéro de téléphone" autocomplete="off" />
+		      </div>
+		      <textarea rows="5" id="message" name="message" placeholder="Message" class="form-control"></textarea>
+		      <input type="submit" class="send-btn" value="Envoyer un message" autocomplete="off" />
+		    </form>
+								<p th:if="${error}" style="color: red;" th:text="${error}"></p>
+				  			    <!-- Message de succès -->
+				  			    <p th:if="${success}" style="color: green;" th:text="${success}"></p>
+		  </div>
+  
+        <!-- Map -->
+        
+        <!-- End Map -->
+  
+      </section>
+
+
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="*about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="event.html">Event</a></li>
+          <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://www.esb.tn/fr/" target="_blank">Visit ESB</a></li>
+    
+        </ul>
+        <p>&copy;2024 Projet Intégré - Groupe 1 | All Rights Reserved</p>
+    </footer>
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
